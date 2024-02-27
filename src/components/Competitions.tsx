@@ -76,7 +76,7 @@ const Competitions = () => {
     },
   ];
   return (
-    <div className="mx-6 lg:mx-10 mt-8">
+    <div className="mx-6 space-y-6 lg:mx-10 mt-8">
       <CompetitionModal handleClose={handleClose} open={open} />
       <CompetitionModal1 handleClose={handleClose1} open={open1} />
       <div className="flex flex-col md:flex-row justify-between gap-y-4">
@@ -166,7 +166,7 @@ const Competitions = () => {
         </div>
       </Card>
 
-      <div className="flex flex-wrap gap-6">
+      <div className="flex flex-wrap gap-6 gap-y-6">
         {competitionData?.map((competition, index) => (
           <Card
             onClick={() => handleOpen1()}
@@ -174,7 +174,6 @@ const Competitions = () => {
             sx={{
               width: { xs: "100%", sm: 330, md: 341, xl: 370 },
               bgcolor: "transparent",
-              mt: 3,
               cursor: "pointer",
               p: { xs: 2, sm: 3 },
               border: "1px solid transparent",
