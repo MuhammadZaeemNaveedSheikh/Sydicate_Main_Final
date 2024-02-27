@@ -33,8 +33,8 @@ const Leaderboard = () => {
         </div>
         <div className="flex flex-col md:flex-row  gap-y-4 justify-start md:justify-between mt-3 items-start md:items-center">
           <div className="flex flex-wrap gap-3 items-center">
-            <button className=" bg-none text-white cursor-pointer  p-[0.90rem] rounded-lg">
-              <div className="flex items-center gap-x-1">
+            <button className=" bg-none text-white cursor-pointer  p-[0.90rem] rounded-lg [&:hover>*>*]:!text-white">
+              <div className="flex items-center gap-x-1 ">
                 <RefreshIcon fontSize="small" sx={{ color: "#646464" }} />
                 <div className="font-normal text-sm font-[Montserrat] text-[#646464]">
                   Refresh
@@ -49,7 +49,7 @@ const Leaderboard = () => {
           <div className="flex flex-row justify-between items-center gap-x-3 gap-y-6">
             <button
               //   onClick={handleAddOpen}
-              className=" bg-black text-white cursor-pointer  p-[0.75rem] rounded-md"
+              className="bg-[#FFFFFF05] text-white cursor-pointer p-[0.75rem] rounded-md"
             >
               <div className="flex items-center gap-x-1">
                 <AddIcon sx={{ color: "white", fontSize: 20 }} />
@@ -68,7 +68,7 @@ const Leaderboard = () => {
                 // onChange={onChange}
                 displayEmpty
                 sx={{
-                  backgroundColor: "none",
+                  backgroundColor: "#FFFFFF05",
                   width: 180,
                   height: 40,
                   borderRadius: "6px",
@@ -105,7 +105,7 @@ const Leaderboard = () => {
                       fontSize: 16,
                       color:
                         theme.palette.mode === "light" ? "black" : "#DEDEDE",
-                      border: "1px solid #E2E5E7",
+                      border: "0px solid #E2E5E7",
 
                       "&:hover": {
                         bgcolor:

@@ -31,7 +31,7 @@ const Leaderboardtable = () => {
       renderCell: () => (
         <label className="relative inline-flex items-center cursor-pointer">
           <input type="checkbox" value="" className="sr-only peer" />
-          <div className="w-11 h-6 border-4 bg-black peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-black dark:peer-focus:ring-black-800 rounded-full peer dark:bg-black-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-white  after:rounded-2xl after:h-5 after:w-5 after:transition-all peer-checked:bg-black"></div>
+          <div className="w-11 h-6 border-4 bg-black peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-black dark:peer-focus:ring-black-800 rounded-full peer dark:bg-black-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-white  after:rounded-2xl after:h-5 after:w-5 after:transition-all peer-checked:bg-white peer-checked:bg-opacity-70"></div>
         </label>
       ),
     },
@@ -78,6 +78,9 @@ const Leaderboardtable = () => {
             fontWeight: 500,
             borderRadius: "8px",
           },
+          "& .MuiCheckbox-root.Mui-checked:not(.MuiCheckbox-indeterminate) svg": {
+            background: "#FFFFFF"
+          }
         }}
         rows={rows}
         getRowId={(row: any) => {
