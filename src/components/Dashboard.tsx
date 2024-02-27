@@ -217,13 +217,13 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-9 mt-6">
+      <div className="flex flex-wrap justify-center gap-9 mt-12">
         {data.map((item, index) => (
           <div
             key={index}
-            className={`w-full md:w-[309px] rounded ${
+            className={`w-full md:w-[309px] rounded-[10px] ${
               theme.palette.mode === "light" ? "bg-gray-700" : "bg-white"
-            } bg-opacity-5 p-3 md:p-6 text-center`}
+            } bg-opacity-5 p-3 md:p-6 md:py-12 text-center`}
           >
             <Typography
               sx={{
@@ -282,13 +282,12 @@ const Dashboard = () => {
       >
         Objective Explanations
       </Typography>
-      <div className="flex flex-wrap gap-4 md:gap-12">
+      <div className="flex flex-wrap gap-4 md:gap-8 mt-6">
         {Objective.map((data, index) => (
           <Card
             key={index}
             sx={{
               width: { xs: "100%", md: 302 },
-              mt: 2,
               p: 2,
               borderRadius: "12px",
             }}
