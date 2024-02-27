@@ -6,7 +6,7 @@ const SystemTab = () => {
   return (
     <>
       <div className="flex flex-col lg:flex-row gap-4">
-        <div className="w-full xl:w-[40%] bg-white bg-opacity-5 p-3 md:p-6">
+        <div className="w-full xl:w-[40%] bg-white bg-opacity-5 p-3 md:p-6 rounded-[8px]">
           <Typography
             sx={{
               fontSize: 22,
