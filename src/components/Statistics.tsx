@@ -29,20 +29,20 @@ const Statistics = () => {
         {value === 0 && (
           <div className="flex flex-wrap lg:flex-row gap-6 items-center px-4 sm:px-[0px]">
             <button
-              className="bg-[#0B0919] text-[#DEDEDE] cursor-pointer h-[40px] w-[130px] md:w-[90px] xl:h-[54px] lg:w-[90px] xl:w-[150px] rounded-lg font-medium text-sm xl:text-lg font-[Montserrat]"
+              className="bg-[#0B0919] hover:bg-[#423860] text-[#DEDEDE] cursor-pointer h-[40px] w-[130px] md:w-[90px] xl:h-[54px] lg:w-[90px] xl:w-[150px] rounded-lg font-medium text-sm xl:text-lg font-[Montserrat]"
               style={{ border: "1px solid #DEDEDE" }}
             >
               Withdrawal
             </button>
             <button
-              className={`bg-[#61FF00] bg-opacity-60 ${
+              className={`bg-[#61FF00] bg-opacity-60 hover:bg-[#423860] ${
                 theme.palette.mode === "light" ? "text-black" : "text-white"
               } cursor-pointer font-medium font-[Montserrat] text-sm xl:text-lg h-[40px] w-[134px] md:w-[90px] lg:w-[90px] xl:h-[54px] xl:w-[134px] rounded-md`}
             >
               Passed
             </button>
             <button
-              className="bg-[#0B0919] text-[#DEDEDE] cursor-pointer h-[40px] w-[120px] md:w-[90px] lg:w-[95px] xl:h-[54px] xl:w-[134px] rounded-lg font-medium text-sm xl:text-lg font-[Montserrat]"
+              className="bg-[#0B0919] hover:bg-[#423860] text-[#DEDEDE] cursor-pointer h-[40px] w-[120px] md:w-[90px] lg:w-[95px] xl:h-[54px] xl:w-[134px] rounded-lg font-medium text-sm xl:text-lg font-[Montserrat]"
               style={{ border: "1px solid #DEDEDE" }}
             >
               Credentials
