@@ -18,12 +18,12 @@ const PayoutsTabs = () => {
     // Add more orders as needed
   ];
   return (
-    <div>
-      <div className="flex flex-col md:flex-row mt-12 gap-3 sm:gap-6 xl:gap-10">
+    <div className="space-y-8">
+      <div className="flex flex-col md:flex-row mt-12 gap-8">
         <div
-          className={`w-full lg:w-[20%] flex flex-col justify-between ${
+          className={`w-full lg:w-[32%] flex flex-col justify-between ${
             theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-          } bg-opacity-5 p-2 md:p-4 xl:p-6`}
+          } bg-opacity-5 p-2 md:p-4 xl:p-6 rounded-[10px]`}
         >
           <Typography
             sx={{
@@ -69,9 +69,9 @@ const PayoutsTabs = () => {
           <div
             className={` ${
               theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-            } bg-opacity-5 p-2 md:p-4`}
+            } bg-opacity-5 p-2 md:p-4 rounded-[10px]`}
           >
-            <div className="flex flex-col md:flex-row justify-between gap-3 xl:gap-[0px]">
+            <div className="flex flex-col md:flex-row justify-between gap-4">
               <div className="w-full xl:w-[40%]">
                 <Typography
                   sx={{
@@ -116,7 +116,7 @@ const PayoutsTabs = () => {
           <div
             className={`${
               theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-            } bg-opacity-5 p-2 md:p-4`}
+            } bg-opacity-5 p-2 md:p-4 rounded-[10px]`}
           >
             <Typography
               sx={{
@@ -172,7 +172,7 @@ const PayoutsTabs = () => {
       <div
         className={` ${
           theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-        } bg-opacity-5 p-3 md:p-6 mt-6 md:mt-12`}
+        } bg-opacity-5 p-3 md:p-6 mt-6 md:mt-12 rounded-[10px]`}
       >
         <Typography
           sx={{
