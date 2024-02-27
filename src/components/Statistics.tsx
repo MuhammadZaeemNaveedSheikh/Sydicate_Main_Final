@@ -79,6 +79,11 @@ const Statistics = () => {
             fontSize: { xs: 14, sm: 16 },
             fontFamily: "Montserrat",
           },
+
+          "& button:hover": {
+            background: "transparent",
+            color: "white",
+          }
         }}
         TabIndicatorProps={{
           sx: { bgcolor: theme.palette.mode === "light" ? "black" : "white" },

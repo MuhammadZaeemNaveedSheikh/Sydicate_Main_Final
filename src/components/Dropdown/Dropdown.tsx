@@ -62,7 +62,7 @@ const Dropdown = () => {
               fontWeight: 400,
               fontSize: 16,
               color: theme.palette.mode === "light" ? "black" : "#DEDEDE",
-              border: "1px solid #E2E5E7",
+              border: "0px solid #E2E5E7",
 
               "&:hover": {
                 bgcolor: theme.palette.mode === "light" ? "white" : "#061D39",
