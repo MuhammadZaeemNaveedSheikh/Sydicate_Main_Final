@@ -103,7 +103,7 @@ const Friends = () => {
         </Box>
       </div>
       {/* Stats Comparison */}
-      <Grid container spacing={2}>
+      <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           {/* Self Stats */}
           <Paper sx={{ p: 3, borderRadius: 5 }}>
@@ -126,7 +126,7 @@ const Friends = () => {
         </Grid>
       </Grid>
       {/* Graphs Comparison */}
-      <Grid container spacing={2} marginTop={1}>
+      <Grid container spacing={4} marginTop={0}>
         <Grid item xs={12} md={6}>
           {/* Self grah */}
           <Paper sx={{ p: 3, borderRadius: 5 }}>
