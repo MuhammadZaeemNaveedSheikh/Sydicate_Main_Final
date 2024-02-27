@@ -40,6 +40,10 @@ const AffiliatePortal = () => {
               fontSize: { xs: 14, sm: 16 },
               fontFamily: "Montserrat",
             },
+            "& .MuiTab-root:hover": {
+              background: "transparent",
+              color: "white"
+            }
           }}
           TabIndicatorProps={{
             sx: { bgcolor: theme.palette.mode === "light" ? "black" : "white" },
@@ -54,6 +58,7 @@ const AffiliatePortal = () => {
               textTransform: "capitalize",
             }}
             label="Dashboard"
+            disableRipple
           />
           <Tab
             sx={{
@@ -64,6 +69,7 @@ const AffiliatePortal = () => {
               textTransform: "capitalize",
             }}
             label="Stats"
+            disableRipple
           />
           <Tab
             sx={{
@@ -74,6 +80,7 @@ const AffiliatePortal = () => {
               textTransform: "capitalize",
             }}
             label="Payouts"
+            disableRipple
           />
         </Tabs>
         <div className="space-y-6">
