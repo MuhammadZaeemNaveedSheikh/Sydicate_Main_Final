@@ -9,9 +9,9 @@ const OverviewTab = () => {
     <>
       <div
         id="top-stat-cards"
-        className="w-full flex flex-wrap gap-y-3 mt-3 justify-center md:justify-between"
+        className="w-full flex flex-wrap justify-start gap-6"
       >
-        <div className="h-[97px] shadow-lg bg-white bg-opacity-5 rounded-[10px] overflow-hidden p-6 w-[310px] sm:w-[350px] xl:w-[475px]">
+        <div className="shadow-lg bg-white bg-opacity-5 rounded-[10px] overflow-hidden p-6 w-[310px] sm:w-[350px] xl:w-[475px]">
           <div className="flex justify-between items-center pb-1">
             <Typography
               variant="body1"
@@ -37,7 +37,7 @@ const OverviewTab = () => {
             $3,100
           </Typography>
         </div>
-        <div className="h-[97px] shadow-lg bg-white bg-opacity-5 rounded-[10px] overflow-hidden p-6 w-[310px] sm:w-[350px] xl:w-[475px]">
+        <div className="shadow-lg bg-white bg-opacity-5 rounded-[10px] overflow-hidden p-6 w-[310px] sm:w-[350px] xl:w-[475px]">
           <div className="flex justify-between items-center pb-1">
             <Typography
               variant="body1"
@@ -62,7 +62,7 @@ const OverviewTab = () => {
             $27,000.00
           </Typography>
         </div>
-        <div className="h-[97px] shadow-lg bg-white bg-opacity-5 rounded-[10px] overflow-hidden p-6 w-[310px] sm:w-[350px] xl:w-[475px]">
+        <div className="shadow-lg bg-white bg-opacity-5 rounded-[10px] overflow-hidden p-6 w-[310px] sm:w-[350px] xl:w-[475px]">
           <div className="flex justify-between items-center pb-1">
             <div className="flex gap-2 items-center">
               <Typography
@@ -93,7 +93,7 @@ const OverviewTab = () => {
             $28,100
           </Typography>
         </div>
-        <div className="h-[97px] shadow-lg bg-white bg-opacity-5 rounded-[10px] overflow-hidden p-6 w-[310px] sm:w-[350px] xl:w-[475px]">
+        <div className="shadow-lg bg-white bg-opacity-5 rounded-[10px] overflow-hidden p-6 w-[310px] sm:w-[350px] xl:w-[475px]">
           <div className="flex justify-between items-center pb-1">
             <div className="flex gap-2 items-center">
               <Typography
@@ -125,7 +125,7 @@ const OverviewTab = () => {
           </Typography>
         </div>
       </div>
-      <div className="flex flex-wrap gap-6 mt-4 justify-center md:justify-between">
+      <div className="flex flex-wrap gap-6 mt-6 justify-start">
         {/* Max Loss Limit  */}
         <div className="shadow-lg rounded-[10px] overflow-hidden p-6 md:w-[50%] bg-white bg-opacity-5">
           <div className="flex gap-2 items-center">
@@ -153,7 +153,7 @@ const OverviewTab = () => {
             <div className="flex flex-col gap-y-2 ">
               <Typography
                 sx={{
-                  fontSize: { xs: 10 },
+                  fontSize: { xs: 16 },
                   color: theme.palette.mode === "light" ? "black" : "white",
                 }}
               >
@@ -161,7 +161,7 @@ const OverviewTab = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: 14 },
+                  fontSize: { xs: 20 },
                   color: theme.palette.mode === "light" ? "black" : "#D6C3F8",
                 }}
               >
@@ -171,7 +171,7 @@ const OverviewTab = () => {
             <div className="flex flex-col gap-y-2">
               <Typography
                 sx={{
-                  fontSize: { xs: 10 },
+                  fontSize: { xs: 16 },
                   color: theme.palette.mode === "light" ? "black" : "white",
                 }}
               >
@@ -179,7 +179,7 @@ const OverviewTab = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: 14 },
+                  fontSize: { xs: 20 },
                   color: theme.palette.mode === "light" ? "black" : "#D6C3F8",
                 }}
               >
@@ -189,7 +189,7 @@ const OverviewTab = () => {
             <div className="flex flex-col gap-y-2">
               <Typography
                 sx={{
-                  fontSize: { xs: 10 },
+                  fontSize: { xs: 16 },
                   color: theme.palette.mode === "light" ? "black" : "white",
                 }}
               >
@@ -197,7 +197,7 @@ const OverviewTab = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: 14 },
+                  fontSize: { xs: 20 },
                   color: theme.palette.mode === "light" ? "black" : "#D6C3F8",
                 }}
               >
@@ -207,15 +207,15 @@ const OverviewTab = () => {
             <div className="flex flex-col gap-y-2">
               <Typography
                 sx={{
-                  fontSize: { xs: 10 },
+                  fontSize: { xs: 16 },
                   color: theme.palette.mode === "light" ? "black" : "white",
                 }}
               >
-                Balance Start Of Day
+                Start Of Day Balance
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: 14 },
+                  fontSize: { xs: 20 },
                   color: theme.palette.mode === "light" ? "black" : "#D6C3F8",
                 }}
               >

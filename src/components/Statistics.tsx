@@ -92,6 +92,7 @@ const Statistics = () => {
             fontFamily: "Montserrat",
             textTransform: "capitalize",
           }}
+          disableRipple
           label="Overviews"
         />
         <Tab
@@ -102,6 +103,7 @@ const Statistics = () => {
             fontFamily: "Montserrat",
             textTransform: "capitalize",
           }}
+          disableRipple
           label="Daily Returns"
         />
         <Tab
@@ -112,6 +114,7 @@ const Statistics = () => {
             fontFamily: "Montserrat",
             textTransform: "capitalize",
           }}
+          disableRipple
           label="Closed Trades"
         />
         <Tab
@@ -122,6 +125,7 @@ const Statistics = () => {
             fontFamily: "Montserrat",
             textTransform: "capitalize",
           }}
+          disableRipple
           label="Positions"
         />
         <Tab
@@ -132,6 +136,7 @@ const Statistics = () => {
             fontFamily: "Montserrat",
             textTransform: "capitalize",
           }}
+          disableRipple
           label="Orders"
         />
       </Tabs>

@@ -158,7 +158,7 @@ const Chart: React.FC = () => {
     },
     fill: {
       opacity: 1,
-    },
+    }
   };
 
   const series: ChartProps["series"] = [
