@@ -30,16 +30,17 @@ const Positions = () => {
           theme.palette.mode === "light"
             ? "bg-gray-100 "
             : "bg-white bg-opacity-5"
-        } p-3 rounded-xl md:p-6`}
+        } p-3 rounded-xl md:p-6 !text-center`}
       >
         <div className="flex flex-wrap justify-start items-start gap-4 lg:gap-[0px] lg:justify-between ">
           {/* {statistics.map((statistic, index) => ( */}
-          <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col items-center gap-y-2 ">
             <Typography
               sx={{
                 fontSize: { xs: 14, md: 16 },
                 color: "#646464",
               }}
+              className="lg:translate-x-1/2"
             >
               {/* {statistic.label} */}
               Best Trades
@@ -50,6 +51,7 @@ const Positions = () => {
                 fontSize: { xs: 18, md: 24 },
                 color: theme.palette.mode === "light" ? "black" : "white",
               }}
+              className="lg:translate-x-1/2"
             >
               {/* {statistic.value} */}$1285.65
             </Typography>
@@ -128,6 +130,7 @@ const Positions = () => {
                 fontSize: { xs: 14, md: 16 },
                 color: "#646464",
               }}
+              className="lg:-translate-x-1/2"
             >
               {/* {statistic.label} */}
               Win Rate
@@ -138,6 +141,7 @@ const Positions = () => {
                 fontSize: { xs: 18, md: 24 },
                 color: theme.palette.mode === "light" ? "black" : "white",
               }}
+              className="lg:-translate-x-1/2"
             >
               {/* {statistic.value} */}56.67%
             </Typography>
@@ -153,6 +157,7 @@ const Positions = () => {
                 fontSize: { xs: 14, md: 16 },
                 color: "#646464",
               }}
+              className="lg:translate-x-1/2"
             >
               {/* {statistic.label} */}
               Avg Wins
@@ -163,6 +168,7 @@ const Positions = () => {
                 fontSize: { xs: 18, md: 24 },
                 color: theme.palette.mode === "light" ? "black" : "white",
               }}
+              className="lg:translate-x-1/2"
             >
               {/* {statistic.value} */}$1285.65
             </Typography>
@@ -238,6 +244,7 @@ const Positions = () => {
                 fontSize: { xs: 14, md: 16 },
                 color: "#646464",
               }}
+              className="lg:-translate-x-1/2"
             >
               Profit Fac
             </Typography>
@@ -247,6 +254,7 @@ const Positions = () => {
                 fontSize: { xs: 18, md: 24 },
                 color: theme.palette.mode === "light" ? "black" : "white",
               }}
+              className="lg:-translate-x-1/2"
             >
               {/* {statistic.value} */}56.67%
             </Typography>
