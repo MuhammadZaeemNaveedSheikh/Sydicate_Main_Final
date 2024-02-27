@@ -106,6 +106,15 @@ const Header: React.FC<HeaderProps> = ({ menuItem }) => {
 
                 height: 44,
 
+                "&:has(input:focus)": {
+                  border: "1px solid white"
+                },  
+
+                "input:-webkit-autofill,input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active": {
+                  boxShadow: `0 0 0 30px ${theme.palette.mode === "light" ? "#fff" : "#0e0c14"} inset !important`,
+                  WebkitBoxShadow: `0 0 0 30px ${theme.palette.mode === "light" ? "#fff" : "#0e0c14"} inset !important`,
+                },
+
                 "& fieldset": {
                   borderColor:
                     theme.palette.mode === "light" ? "black" : "transparent",
@@ -135,14 +144,14 @@ const Header: React.FC<HeaderProps> = ({ menuItem }) => {
         <div className="flex gap-1 md:gap-2 items-center">
           <div
             id="plan"
-            className="flex items-center justify-center border border-gray-500 rounded-full px-3 relative"
+            className="flex items-center justify-center gap-2 border border-gray-500 rounded-full px-3 relative"
           >
             <img
-              width="100%"
-              height="100%"
+              width="18px"
+              height="18px"
               src="/Images/diamondImg.svg"
               alt="plan"
-              className="absolute -left-[45px] -top-[35px]"
+              className="p-0.5"
             />
             <span>
               <Typography

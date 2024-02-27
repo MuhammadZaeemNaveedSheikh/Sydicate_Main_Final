@@ -116,7 +116,7 @@ export function Layout({ children }) {
   // ];
   return (
     <div className="lg:flex h-[100vh]">
-      <div className="w-[80%] lg:w-[25%] xl:w-[20%]">
+      <div className="w-[80%] lg:w-[20%] xl:w-[20%]">
         <Sidebar menuItem={menuItem} />
       </div>
       <div className="w-full lg:w-[75%] xl:w-[80%] ">
