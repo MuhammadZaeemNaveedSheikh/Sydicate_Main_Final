@@ -89,7 +89,7 @@ const BarChart1 = () => {
 
   return (
     <>
-      <div className="bg-white bg-opacity-5 p-3 lg:p-6">
+      <div className="bg-white bg-opacity-5 p-3 lg:p-6 rounded-lg">
         <Typography
           sx={{
             color: theme.palette.mode === "light" ? "black" : "white",
