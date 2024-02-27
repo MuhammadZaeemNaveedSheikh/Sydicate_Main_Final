@@ -56,9 +56,10 @@ const AboutCards = () => {
           <div className="flex flex-col gap-[0.62rem]">
             <Typography sx={stylesMui.aboutHeadings}>$0 Commission</Typography>
             <Typography sx={stylesMui.aboutCardText}>
-              We support openness and reasonable prices. To help you optimize
-              your virtual gains and keep more money in your pocket, we don't
-              charge commissions on any of your trades.
+              We support reasonable and open prices. We do not charge commission
+              on any trades that are made through our website, this is created
+              to help optimize your virtual gains and keep extra money in your
+              pocket.
             </Typography>
           </div>
         </div>
