@@ -18,7 +18,7 @@ const PhotoUpload = () => {
     console.log("Selected File:", selectedFile);
   };
   return (
-    <div className="w-[7.5rem] h-[7.5rem] 2xl:w-[15.125rem] 2xl:h-[15.125rem] flex items-center justify-center rounded-lg bg-[#F4F4F4] border border-dashed border-gray-400">
+    <div className="w-[7.5rem] h-[7.5rem] 2xl:w-[15.125rem] 2xl:h-[15.125rem] flex items-center justify-center rounded-lg bg-[#FFFFFF05] border border-dashed border-gray-400">
       <img
         src={CameraIcon}
         alt="upload icon"

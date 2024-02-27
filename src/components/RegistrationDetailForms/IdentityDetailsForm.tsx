@@ -46,9 +46,9 @@ const IdentityDetailsForm: React.FC<IdentityDetailsFormProps> = ({
 
   return (
     <>
-      <div className="w-full md:w-4/6 md:ml-[3.75rem] flex flex-col justify-center">
+      <div className="w-full md:w-4/6 md:ml-[3.75rem] flex flex-col justify-center gap-4">
         <Typography sx={stylesMui.formTitleText}>Identity details</Typography>
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit} className="space-y-4">
           <div className="flex flex-col md:flex-row gap-7 items-end">
             <FormControl
               fullWidth
@@ -71,7 +71,7 @@ const IdentityDetailsForm: React.FC<IdentityDetailsFormProps> = ({
                     height: "1.5rem",
                   },
                 }}
-                sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+                sx={{ ...stylesMui.inputField, mb: "2px", background: "#FFFFFF05" }}
               />
               {formik.touched.countryId && formik.errors.countryId && (
                 <FormHelperText
@@ -100,7 +100,7 @@ const IdentityDetailsForm: React.FC<IdentityDetailsFormProps> = ({
                     height: "1.5rem",
                   },
                 }}
-                sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+                sx={{ ...stylesMui.inputField, mb: "2px", background: "#FFFFFF05" }}
               />
               {formik.touched.idNumber && formik.errors.idNumber && (
                 <FormHelperText error id="standard-weight-helper-text-idNumber">
@@ -134,7 +134,7 @@ const IdentityDetailsForm: React.FC<IdentityDetailsFormProps> = ({
                     height: "1.5rem",
                   },
                 }}
-                sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+                sx={{ ...stylesMui.inputField, mb: "2px", background: "#FFFFFF05" }}
               />
               {formik.touched.passportNumber &&
                 formik.errors.passportNumber && (

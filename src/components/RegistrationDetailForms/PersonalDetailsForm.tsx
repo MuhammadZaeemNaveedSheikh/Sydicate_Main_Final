@@ -44,9 +44,9 @@ const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
 
   return (
     <>
-      <div className="w-full md:w-4/6 md:ml-[3.75rem] flex flex-col justify-center">
+      <div className="w-full md:w-4/6 md:ml-[3.75rem] flex flex-col justify-center gap-3">
         <Typography sx={stylesMui.formTitleText}>Personal details</Typography>
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit} className="space-y-3">
           <FormControl
             fullWidth
             error={Boolean(formik.touched.firstName && formik.errors.firstName)}
@@ -64,7 +64,7 @@ const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
                   height: "1.5rem",
                 },
               }}
-              sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+              sx={{ ...stylesMui.inputField, mb: "8px", background: "#FFFFFF05" }}
             />
             {formik.touched.firstName && formik.errors.firstName && (
               <FormHelperText error id="standard-weight-helper-text-firstName">
@@ -90,7 +90,7 @@ const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
                   height: "1.5rem",
                 },
               }}
-              sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+              sx={{ ...stylesMui.inputField, mb: "8px", background: "#FFFFFF05" }}
             />
             {formik.touched.lastName && formik.errors.lastName && (
               <FormHelperText error id="standard-weight-helper-text-lastName">
@@ -116,7 +116,7 @@ const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
                   height: "1.5rem",
                 },
               }}
-              sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+              sx={{ ...stylesMui.inputField, mb: "8px", background: "#FFFFFF05" }}
             />
             {formik.touched.email && formik.errors.email && (
               <FormHelperText error id="standard-weight-helper-text-email">

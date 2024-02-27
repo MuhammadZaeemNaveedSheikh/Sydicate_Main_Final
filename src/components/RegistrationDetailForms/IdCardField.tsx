@@ -29,9 +29,9 @@ const IdCardField: React.FC<IdCardFieldProps> = ({
     console.log("Selected File:", selectedFile);
   };
   return (
-    <div className="h-[6.25rem] px-[1.69rem] w-full flex justify-between items-center rounded-lg bg-[#F4F4F4] border border-dashed border-gray-400">
+    <div className="h-[6.25rem] px-[1.69rem] w-full flex justify-between items-center rounded-lg bg-[#FFFFFF05] border border-dashed border-gray-400">
       <div className="flex flex-col">
-        <Typography sx={{ ...stylesMui.inputLabel, color: "#0D1D54" }}>
+        <Typography sx={{ ...stylesMui.inputLabel, color: "#FFFFFF" }}>
           {label}
         </Typography>
         <Typography sx={{ ...stylesMui.inputLabel, fontSize: "0.75rem" }}>

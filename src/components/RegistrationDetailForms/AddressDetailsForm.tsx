@@ -59,9 +59,9 @@ const AddressDetailsForm: React.FC<AddressDetailsFormProps> = ({
 
   return (
     <>
-      <div className="w-full md:w-4/6 md:ml-[3.75rem] flex flex-col justify-center">
+      <div className="w-full md:w-4/6 md:ml-[3.75rem] flex flex-col justify-center gap-3">
         <Typography sx={stylesMui.formTitleText}>Address details</Typography>
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit} className="space-y-3">
           <FormControl
             fullWidth
             error={Boolean(formik.touched.line1 && formik.errors.line1)}
@@ -79,7 +79,7 @@ const AddressDetailsForm: React.FC<AddressDetailsFormProps> = ({
                   height: "1.5rem",
                 },
               }}
-              sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+              sx={{ ...stylesMui.inputField, mb: "8px", background: "#FFFFFF05" }}
             />
             {formik.touched.line1 && formik.errors.line1 && (
               <FormHelperText error id="standard-weight-helper-text-line1">
@@ -105,7 +105,7 @@ const AddressDetailsForm: React.FC<AddressDetailsFormProps> = ({
                   height: "1.5rem",
                 },
               }}
-              sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+              sx={{ ...stylesMui.inputField, mb: "8px", background: "#FFFFFF05" }}
             />
             {formik.touched.line2 && formik.errors.line2 && (
               <FormHelperText error id="standard-weight-helper-text-line2">
@@ -132,7 +132,7 @@ const AddressDetailsForm: React.FC<AddressDetailsFormProps> = ({
                     height: "1.5rem",
                   },
                 }}
-                sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+                sx={{ ...stylesMui.inputField, mb: "8px", background: "#FFFFFF05" }}
               />
               {formik.touched.city && formik.errors.city && (
                 <FormHelperText error id="standard-weight-helper-text-city">
@@ -176,7 +176,7 @@ const AddressDetailsForm: React.FC<AddressDetailsFormProps> = ({
                     value={formik.values.region}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+                    sx={{ ...stylesMui.inputField, mb: "8px", background: "#FFFFFF05" }}
                   />
                 )}
               />
@@ -205,7 +205,7 @@ const AddressDetailsForm: React.FC<AddressDetailsFormProps> = ({
                     height: "1.5rem",
                   },
                 }}
-                sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+                sx={{ ...stylesMui.inputField, mb: "8px", background: "#FFFFFF05" }}
               />
               {formik.touched.country && formik.errors.country && (
                 <FormHelperText error id="standard-weight-helper-text-country">
@@ -233,7 +233,7 @@ const AddressDetailsForm: React.FC<AddressDetailsFormProps> = ({
                     height: "1.5rem",
                   },
                 }}
-                sx={{ ...stylesMui.inputField, mb: "1.19rem" }}
+                sx={{ ...stylesMui.inputField, mb: "8px", background: "#FFFFFF05" }}
               />
               {formik.touched.zipCode && formik.errors.zipCode && (
                 <FormHelperText error id="standard-weight-helper-text-zipCode">
