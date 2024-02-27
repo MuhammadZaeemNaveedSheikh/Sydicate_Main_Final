@@ -60,13 +60,13 @@ const StatsTab = () => {
   ];
   return (
     <>
-      <div className="flex flex-col sm:flex-row mt-4 md:mt-12 md:gap-5 xl:gap-4">
+      <div className="flex flex-col sm:flex-row mt-4 md:mt-12 gap-6">
         {dummyData.map((data) => (
           <div
             key={data.id}
             className={`w-full sm:w-1/3 lg:w-1/4 p-3 lg:p-6 flex justify-between mt-2 ${
               theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-            } bg-opacity-5`}
+            } bg-opacity-5 rounded-[10px]`}
           >
             <div className="flex flex-col gap-3">
               <div className="flex flex-row gap-3 items-center">
@@ -93,13 +93,13 @@ const StatsTab = () => {
         ))}
       </div>
 
-      <div className="flex md:flex-row  mt-12 gap-4">
+      <div className="flex md:flex-row  mt-12 gap-6">
         {dummyData1.map((data) => (
           <div
             key={data.id}
             className={`w-1/3 flex flex-col p-2 md:p-4 ${
               theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-            } bg-opacity-5`}
+            } bg-opacity-5 rounded-[10px]`}
           >
             <div className="flex flex-col gap-3">
               <Typography
@@ -124,9 +124,9 @@ const StatsTab = () => {
       </div>
 
       <Card
-        sx={{ p: { xs: 2, md: 4 }, width: { xs: "70%", md: "29%" }, mt: 6 }}
+        sx={{ p: { xs: 2, md: 4 }, width: { xs: "70%", md: "29%" }, mt: 6, borderRadius: "10px" }}
       >
-        <div className="flex justify-between gap-1 ">
+        <div className="flex justify-between gap-1">
           <img src="/Icons/dollarIcon.svg" width={40} height={40} />
           <Typography
             sx={{

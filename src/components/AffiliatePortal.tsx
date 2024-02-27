@@ -76,9 +76,11 @@ const AffiliatePortal = () => {
             label="Payouts"
           />
         </Tabs>
-        {value === 0 && <DashboardTab />}
-        {value === 1 && <StatsTab />}
-        {value === 2 && <PayoutsTabs />}
+        <div className="space-y-6">
+          {value === 0 && <DashboardTab />}
+          {value === 1 && <StatsTab />}
+          {value === 2 && <PayoutsTabs />}
+        </div>
       </div>
     </>
   );
