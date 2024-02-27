@@ -9,7 +9,7 @@ const OverviewTab = () => {
     <>
       <div
         id="top-stat-cards"
-        className="w-full flex flex-wrap justify-start gap-6"
+        className="w-full flex flex-wrap justify-between gap-6"
       >
         <div className="shadow-lg bg-white bg-opacity-5 rounded-[10px] overflow-hidden p-6 w-[310px] sm:w-[350px] xl:w-[475px]">
           <div className="flex justify-between items-center pb-1">
@@ -125,7 +125,7 @@ const OverviewTab = () => {
           </Typography>
         </div>
       </div>
-      <div className="flex flex-wrap gap-6 mt-6 justify-start">
+      <div className="flex flex-wrap gap-6 mt-6 justify-between">
         {/* Max Loss Limit  */}
         <div className="shadow-lg rounded-[10px] overflow-hidden p-6 md:w-[50%] bg-white bg-opacity-5">
           <div className="flex gap-2 items-center">
