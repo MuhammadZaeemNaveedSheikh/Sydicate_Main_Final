@@ -1,4 +1,5 @@
 import { Typography, useTheme } from "@mui/material";
+import { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
 interface ChartProps {
@@ -179,6 +180,23 @@ const Chart: React.FC = () => {
     },
   ];
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // Function to update window width in the state
+  const updateWindowWidth = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    // Add event listener to handle window resize
+    window.addEventListener('resize', updateWindowWidth);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', updateWindowWidth);
+    };
+  }, []); 
+
   return (
     <>
       <div className="bg-none">
@@ -196,7 +214,7 @@ const Chart: React.FC = () => {
           options={options}
           series={series}
           type="bar"
-          height={300}
+          height={windowWidth<=1900 ? 300:1000}
         />
       </div>
     </>
