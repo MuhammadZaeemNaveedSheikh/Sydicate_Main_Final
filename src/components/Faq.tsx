@@ -36,6 +36,10 @@ const Faq = () => {
             fontSize: { xs: 14, sm: 16 },
             fontFamily: "Montserrat",
           },
+          "& .MuiTab-root:hover":{
+            background: 'transparent',
+            color: 'white'
+          }
         }}
         TabIndicatorProps={{
           sx: { bgcolor: theme.palette.mode === "light" ? "black" : "white" },
@@ -49,6 +53,7 @@ const Faq = () => {
             textTransform: "capitalize",
           }}
           label="FAQs"
+          disableRipple
         />
         <Tab
           sx={{
@@ -58,10 +63,11 @@ const Faq = () => {
             textTransform: "capitalize",
           }}
           label="Leave Feedback"
+          disableRipple
         />
       </Tabs>
       {value === 0 && (
-        <div className="mt-9 ml-2 md:ml-8 bg-white bg-opacity-5 md:w-[600px] p-2 md:p-5">
+        <div className="mt-9 ml-2 md:ml-8 bg-white bg-opacity-5 md:w-[600px] p-2 md:p-5 md:pb-8 rounded-[10px]">
           <Typography
             sx={{
               fontSize: 26,
@@ -111,7 +117,7 @@ const Faq = () => {
         </div>
       )}
       {value === 1 && (
-        <div className="mt-9 ml-2 md:ml-8 bg-white bg-opacity-5 md:w-[650px] p-2 md:p-5">
+        <div className="mt-9 ml-2 md:ml-8 bg-white bg-opacity-5 md:w-[650px] p-2 md:p-5 md:pb-8 rounded-[10px]">
           <Typography sx={{ fontSize: 16, color: "#646464" }}>
             Ask Question
           </Typography>
@@ -122,12 +128,12 @@ const Faq = () => {
               </button>
             </div>
             <div className="w-full md:w-1/3  border rounded-md border-[#646464]">
-              <button className=" bg-none text-[#646464] font-medium text-xs font-[Montserrat] cursor-pointer py-3 lg:py-4 w-full rounded-[6px]">
+              <button className=" bg-none text-[#646464] font-medium text-xs font-[Montserrat] cursor-pointer py-3 lg:py-4 w-full rounded-[6px] hover:text-white">
                 Suggest Improvement
               </button>
             </div>
             <div className="w-full md:w-1/3 border rounded-md border-[#646464]">
-              <button className=" bg-none text-[#646464] font-medium text-xs font-[Montserrat] cursor-pointer py-3 lg:py-4 w-full rounded-[6px]">
+              <button className=" bg-none text-[#646464] font-medium text-xs font-[Montserrat] cursor-pointer py-3 lg:py-4 w-full rounded-[6px] hover:text-white">
                 Report A Bug
               </button>
             </div>
