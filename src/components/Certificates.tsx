@@ -5,7 +5,7 @@ import FullTick from "./FullTick.tsx";
 const Certificates = () => {
   const theme = useTheme();
   return (
-    <div className="mx-4 sm:mx-6 xl:mx-10 mt-12">
+    <div className="mx-4 space-y-6 sm:mx-6 xl:mx-10 mt-12">
       <div className="flex flex-col md:flex-row justify-between gap-y-4">
         <MainTitleComponent title="Certificates" />
       </div>
@@ -14,7 +14,7 @@ const Certificates = () => {
           theme.palette.mode === "light"
             ? "bg-black bg-opacity-10"
             : "bg-white bg-opacity-5"
-        } items-start gap-3 mx-8 mt-8 p-3 md:p-6 w-60 md:w-96 rounded-[10px]`}
+        } items-start gap-3 md:mx-8 mt-8 p-3 md:p-6 w-full md:w-96 rounded-[10px]`}
       >
         <div className="flex items-center pt-2">
           <FullTick />
@@ -45,7 +45,7 @@ const Certificates = () => {
           theme.palette.mode === "light"
             ? "bg-black bg-opacity-10"
             : "bg-white bg-opacity-5"
-        } p-3 md:p-6 w-60 md:w-96 rounded-[10px] items-start mt-12 mx-8`}
+        } p-3 md:p-6 w-full md:w-96 rounded-[10px] items-start mt-12 md:mx-8`}
       >
         {/* <img className="mt-2" src="/Icons/FullTickIcon.svg" /> */}
         <div className="flex items-center pt-2">
@@ -74,7 +74,7 @@ const Certificates = () => {
         </div>
       </div>
       <div
-        className={`p-3 md:p-6 mt-8 w-full md:w-[40%] rounded-[10px] ${
+        className={`p-3 md:p-6 mt-8 w-full md:w-[40%] md:mx-8 rounded-[10px] ${
           theme.palette.mode === "light"
             ? "bg-black bg-opacity-10"
             : "bg-white bg-opacity-5"
