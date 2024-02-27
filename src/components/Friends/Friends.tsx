@@ -153,7 +153,7 @@ const Friends = () => {
 const TableComponent = () => {
   // Sample data for the table
   const tableData = [
-    { date: "20-08", trades: 0.0, lots: 0.0, results: "$0.00" },
+    { name: "John Doe", date: "20-08", trades: 0.0, lots: 0.0, results: "$0.00" },
     // Add more rows as needed
   ];
 
@@ -162,6 +162,9 @@ const TableComponent = () => {
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-none">
           <tr className="border-b border-[#646464] dark:border-gray-700">
+            <th scope="col" className="py-3">
+              <Typography fontSize="16px">Name</Typography>
+            </th>
             <th scope="col" className="py-3">
               <Typography fontSize="16px">Date</Typography>
             </th>
@@ -183,7 +186,7 @@ const TableComponent = () => {
               className="border-b border-[#646464] dark:border-gray-700"
             >
               <td className="py-4">
-                <Typography fontSize="16px">{row.date}</Typography>
+                <Typography fontSize="16px">{row.name}</Typography>
               </td>
               <td className="py-4">
                 <Typography fontSize="16px">{row.trades}</Typography>
