@@ -82,7 +82,7 @@ const Statistics = () => {
 
           "& button:hover": {
             background: "transparent",
-            color: "white",
+            color: theme.palette.mode==="light"? "#00000088":"white",
           }
         }}
         TabIndicatorProps={{

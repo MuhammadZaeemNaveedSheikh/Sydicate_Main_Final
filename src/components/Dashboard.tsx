@@ -210,7 +210,7 @@ const Dashboard = () => {
                 Max Daily Loss 4%
               </Typography>
             </div>
-            <button className=" bg-[#5B1CD4] text-white font-medium text-lg font-[Poppins] cursor-pointer w-full h-12 rounded-[6px] mt-8">
+            <button className="bg-[#5B1CD4] text-white font-medium text-lg font-[Poppins] cursor-pointer w-full h-12 rounded-[6px] mt-8">
               Get started
             </button>
           </div>
@@ -228,7 +228,7 @@ const Dashboard = () => {
             <Typography
               sx={{
                 fontFamily: "Poppins",
-                color: "#D6C3F8",
+                color: theme.palette.mode === "light" ? "#00000088" : "#D6C3F8",
                 fontSize: { xs: 24, md: 30 },
               }}
             >
@@ -260,7 +260,7 @@ const Dashboard = () => {
               </div>
             ))}
             <button
-              className="bg-none text-white font-medium text-lg font-[Poppins] cursor-pointer w-full h-12 rounded-[6px] mt-8"
+              className={`${theme.palette.mode === "light" ? "bg-black":"bg-none"} text-white font-medium text-lg font-[Poppins] cursor-pointer w-full h-12 rounded-[6px] mt-8`}
               style={{ border: "1px solid white" }}
             >
               Get started
