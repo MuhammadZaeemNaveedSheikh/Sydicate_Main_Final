@@ -10,7 +10,7 @@ const Pagination = () => {
         theme.palette.mode === "light"
           ? "bg-black bg-opacity-none"
           : "bg-white bg-opacity-5"
-      }  flex flex-row items-center justify-between overflow-x-auto mt-8`}
+      }  flex flex-row items-center justify-between overflow-x-auto mt-8 rounded-[8px]`}
     >
       <div className="flex flex-row items-center">
         <IconButton>
