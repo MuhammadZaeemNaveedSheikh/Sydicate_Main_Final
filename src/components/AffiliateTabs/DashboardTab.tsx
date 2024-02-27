@@ -4,7 +4,7 @@ const DashboardTab = () => {
   const theme = useTheme();
   return (
     <>
-      <div className="flex flex-col md:flex-row gap-4 md:gap-4 lg:gap-12 lg:mx-6 mt-12">
+      <div className="flex flex-col md:flex-row gap-6 lg:gap-8 lg:mx-6 mt-12">
         <div
           className={`w-full md:w-[60%] ${
             theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
@@ -53,7 +53,7 @@ const DashboardTab = () => {
               />
             </FormControl>
 
-            <button className=" bg-[#5B1CD4] text-white font-medium text-sm font-[Montserrat] cursor-pointer px-6 py-1 rounded-md">
+            <button className="bg-[#5B1CD4] text-white font-medium text-sm font-[Montserrat] cursor-pointer px-6 py-1 rounded-md">
               COPY
             </button>
           </div>
@@ -112,11 +112,11 @@ const DashboardTab = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row mt-4 gap-x-12 gap-y-6 p-3 md:p-8">
+      <div className="flex flex-col md:flex-row mt-6 gap-6 lg:gap-8 lg:px-6">
         <div
-          className={`w-full lg:w-[22%] flex flex-col justify-between ${
+          className={`w-full lg:w-[25%] flex flex-col justify-between ${
             theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-          } bg-opacity-5 p-2 md:p-4`}
+          } bg-opacity-5 p-2 md:p-4 rounded-[10px]`}
         >
           <Typography
             sx={{
@@ -161,7 +161,7 @@ const DashboardTab = () => {
           <div
             className={`${
               theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-            } bg-opacity-5 p-3 md:p-6`}
+            } bg-opacity-5 p-3 md:p-6 rounded-[10px]`}
           >
             <Typography
               sx={{
@@ -231,7 +231,7 @@ const DashboardTab = () => {
           <div
             className={`${
               theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-            } bg-opacity-5 p-3 md:p-6`}
+            } bg-opacity-5 p-3 md:p-6 rounded-[10px]`}
           >
             <Typography
               sx={{
