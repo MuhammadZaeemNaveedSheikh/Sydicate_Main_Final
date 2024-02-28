@@ -26,9 +26,9 @@ const Sidebar: React.FC<SidebarProps> = ({ menuItem }) => {
     <div className="hidden lg:flex flex-col 3xl:justify-between 3xl:h-[100vh]">
       <NavLink to="/">
         <div className="flex gap-4 justify-center items-center mt-12 px-8">
-          <img src="../../Icons/logo1.svg" alt="Syndicate Funded" />
+          <img src="../../Icons/logo1.webp" alt="Syndicate Funded" width={64} height={64} />
           <div
-            className={`font-[Montserrat] font-semibold text-[18px] text-${
+            className={`font-[Montserrat] font-semibold text-[18px] -ml-2 text-${
               theme.palette.mode === "light" ? "black" : "white"
             }`}
           >
