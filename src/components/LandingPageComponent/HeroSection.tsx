@@ -77,7 +77,7 @@ const HeroSection = () => {
       </div>
 
       <div
-        className="w-11/12 flex justify-between px-6 md:px-10 xl:px-20 mb-12 md:mb-[5.48rem]"
+        className="w-11/12 flex justify-between flex-col md:flex-row gap-8 md:gap-0 px-0 md:px-10 xl:px-20 mb-12 md:mb-[5.48rem]"
         id="numbers"
       >
         <div
@@ -88,7 +88,7 @@ const HeroSection = () => {
           <Typography sx={stylesMui.countNumbersPrimary}>183+</Typography>
           <Typography sx={stylesMui.subHeroText}>Countries</Typography>
         </div>
-        <VerticalSeparator />
+        <VerticalSeparator classes="hidden md:block" />
         <div
           className="flex flex-col items-center justify-center"
           data-aos="fade-up"
@@ -97,7 +97,7 @@ const HeroSection = () => {
           <Typography sx={stylesMui.countNumbersPrimary}>10K+</Typography>
           <Typography sx={stylesMui.subHeroText}>Traders</Typography>
         </div>
-        <VerticalSeparator />
+        <VerticalSeparator classes="hidden md:block" />
         <div
           className="flex flex-col items-center justify-center"
           data-aos="fade-up"
@@ -108,7 +108,7 @@ const HeroSection = () => {
             Funding Traders Since
           </Typography>
         </div>
-        <VerticalSeparator />
+        <VerticalSeparator classes="hidden md:block" />
         <div
           className="flex flex-col items-center justify-center"
           data-aos="fade-up"
