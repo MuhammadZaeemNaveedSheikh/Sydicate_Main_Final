@@ -47,28 +47,32 @@ import BillingWeb from "./components/BillingWeb";
 import "./App.css";
 
 const WebRoutes = () => (
-  <Routes>
-    <Route path="/sign-up" element={<Register />} />
-    <Route path="/login" element={<Login />} />
-    <Route path="/forgot-password" element={<Forgot />} />
-    <Route path="/" element={<Landing />} />
-    <Route path="/contact" element={<Contact />} />
-    <Route path="/faqs" element={<Faqs />} />
-    <Route path="/legal" element={<Legal />} />
-    <Route path="/statistics" element={<StatisticsWeb />} />
-    <Route path="/challenge-pricing" element={<BillingWeb />} />
-    <Route path="/affiliate-portal" element={<Affiliates />} />
-    <Route path="/contests" element={<Contests />} />
-    <Route path="/leaderboards" element={<Leaderboards />} />
-    <Route path="/competitions" element={<CompetitionsWeb />} />
-    <Route path="/certificates" element={<CertificatesWeb />} />
-    <Route path="/terms-and-conditions" element={<Terms />} />
-    <Route path="/return-policy" element={<Returns />} />
-    <Route path="/privacy-policy" element={<Privacy />} />
-    <Route path="/disclaimer" element={<Disclaimer />} />
-    <Route path="/cookie-policy" element={<Cookie />} />
-    <Route path="*" element={<Navigate to="/web" />} />
-  </Routes>
+  <>
+    <WebHeader />
+    <Routes>
+      <Route path="/sign-up" element={<Register />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/forgot-password" element={<Forgot />} />
+      <Route path="/" element={<Landing />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/faqs" element={<Faqs />} />
+      <Route path="/legal" element={<Legal />} />
+      <Route path="/statistics" element={<StatisticsWeb />} />
+      <Route path="/challenge-pricing" element={<BillingWeb />} />
+      <Route path="/affiliate-portal" element={<Affiliates />} />
+      <Route path="/contests" element={<Contests />} />
+      <Route path="/leaderboards" element={<Leaderboards />} />
+      <Route path="/competitions" element={<CompetitionsWeb />} />
+      <Route path="/certificates" element={<CertificatesWeb />} />
+      <Route path="/terms-and-conditions" element={<Terms />} />
+      <Route path="/return-policy" element={<Returns />} />
+      <Route path="/privacy-policy" element={<Privacy />} />
+      <Route path="/disclaimer" element={<Disclaimer />} />
+      <Route path="/cookie-policy" element={<Cookie />} />
+      <Route path="*" element={<Navigate to="/web" />} />
+    </Routes>
+    <WebFooter />
+  </>
 );
 
 function App() {
