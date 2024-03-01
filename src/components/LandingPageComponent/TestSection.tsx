@@ -30,7 +30,7 @@ const TestSection = () => {
         </div>
       </div>
 
-      <div className="mb-7 md:mb-9 w-full" id="table">
+      <div className="mb-7 md:mb-9 w-full flex justify-center overflow-x-auto" id="table">
         <TestTable />
       </div>
 

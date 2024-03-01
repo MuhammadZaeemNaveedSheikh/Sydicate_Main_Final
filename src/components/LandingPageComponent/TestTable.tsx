@@ -5,7 +5,7 @@ import { stylesMui } from "./styles";
 const TestTable = () => {
   const theme = useTheme();
   const data = [
-    ["Syndicate Funded", "Phase 1", "Phase 2", "Funded"],
+    [" ", "Phase 1", "Phase 2", "Funded"],
     ["Max Trading Days", "Unlimited", "Unlimited", "N/A"],
     ["Virtual Profit Target", "8%", "8%", "8%"],
     ["Virtual Performance Fee", "N/A", "N/A", "80%"],
@@ -20,49 +20,50 @@ const TestTable = () => {
   ];
 
   return (
-    <div className="flex justify-center overflow-x-auto">
-      <table
-        className={`w-[90vw] table-auto border border-white ${
-          theme.palette.mode === "light" ? "bg-gray-700" : "bg-white"
-        } bg-opacity-5`}
-      >
-        <tbody>
-          {data.map((row, rowIndex) => (
-            <tr key={rowIndex}>
-              {row.map((cell, cellIndex) => (
-                <td
-                  key={cellIndex}
-                  className={`border border-white border-opacity-20 py-5 px-8 ${
-                    cellIndex === 0 ? "text-left" : "text-center"
-                  }`}
-                  colSpan={
-                    cellIndex === 3 && rowIndex === data.length - 1 ? 3 : 1
-                  }
-                >
-                  {cell === "Phase 1" ||
-                  cell === "Phase 2" ||
-                  cell === "Funded" ? (
-                    <div
-                      className="bg-[#986AEB] text-white py-4 px-6 rounded"
-                      style={{
-                        minWidth: "100%",
-                      }}
+    <div className={`w-full md:w-11/12 border border-white border-opacity-10 ${
+      theme.palette.mode === "light" ? "bg-gray-700" : "bg-white"
+    } bg-opacity-5 rounded-xl py-8 px-2 md:px-10 overflow-x-auto`}>
+    <table
+      className="w-full table-auto"
+    >
+        {data.map((row, rowIndex) => (
+          <tr key={rowIndex} className="border-b border-white border-opacity-10 last:border-b-0">
+            {row.map((cell, cellIndex) => (
+              <td
+                key={cellIndex}
+                className={`py-5 px-3 ${
+                  cellIndex === 0 ? "text-left" : "text-center"
+                }`}
+              >
+                {cell === "Phase 1" ||
+                cell === "Phase 2" ||
+                cell === "Funded" ? (
+                  <div
+                    className="bg-[#986AEB] text-white py-4 px-6 rounded !min-w-[120px]"
+                    style={{
+                      minWidth: "100%",
+                    }}
+                  >
+                    <Typography
+                      sx={stylesMui.testTableColumns}
+                      className="text-base"
                     >
-                      <Typography sx={stylesMui.testTableColumns}>
-                        {cell}
-                      </Typography>
-                    </div>
-                  ) : (
-                    <Typography sx={stylesMui.testTableColumns}>
                       {cell}
                     </Typography>
-                  )}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+                  </div>
+                ) : (
+                  <Typography
+                    sx={stylesMui.testTableColumns}
+                    className="text-base"
+                  >
+                    {cell}
+                  </Typography>
+                )}
+              </td>
+            ))}
+          </tr>
+        ))}
+    </table>
     </div>
   );
 };
