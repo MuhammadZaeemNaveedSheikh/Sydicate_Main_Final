@@ -144,7 +144,7 @@ const Header: React.FC<HeaderProps> = ({ menuItem }) => {
         <div className="flex gap-1 md:gap-2 items-center">
           <div
             id="plan"
-            className="flex items-center justify-center gap-2 border border-gray-500 rounded-full px-3 relative"
+            className="hidden sm:flex items-center justify-center gap-2 border border-gray-500 rounded-full px-3 relative"
           >
             <img
               width="18px"
