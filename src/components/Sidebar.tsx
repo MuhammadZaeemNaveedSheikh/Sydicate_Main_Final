@@ -26,7 +26,7 @@ const Sidebar: React.FC<SidebarProps> = ({ menuItem }) => {
     <div className="hidden lg:flex flex-col 3xl:justify-between 3xl:h-[100vh]">
       <NavLink
         to="/"
-        className="flex gap-4 justify-center items-center mt-12 px-8"
+        className="flex gap-4 justify-center items-center my-6 px-8"
       >
         <img
           src="../../Icons/logo1.webp"
