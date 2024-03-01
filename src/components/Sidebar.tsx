@@ -23,7 +23,7 @@ const Sidebar: React.FC<SidebarProps> = ({ menuItem }) => {
   };
 
   return (
-    <div className="hidden lg:flex flex-col 3xl:justify-between 3xl:h-[100vh]">
+    <div className="hidden lg:flex flex-col 3xl:gap-6 3xl:h-[100vh]">
       <NavLink
         to="/"
         className="flex gap-4 justify-center items-center my-6 px-8"

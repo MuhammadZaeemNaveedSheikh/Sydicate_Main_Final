@@ -214,7 +214,7 @@ const Chart: React.FC = () => {
           options={options}
           series={series}
           type="bar"
-          height={windowWidth<=1900 ? 300:1000}
+          height={windowWidth<=1900 ? 300:600}
         />
       </div>
     </>
