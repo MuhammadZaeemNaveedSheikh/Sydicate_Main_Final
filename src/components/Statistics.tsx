@@ -66,9 +66,11 @@ const Statistics = () => {
       <Tabs
         value={value}
         onChange={handleChange}
+        variant="scrollable"
         aria-label="basic tabs example"
         sx={{
           fontFamily: "Montserrat",
+
           "& button:focus": {
             color: theme.palette.mode === "light" ? "black" : "white",
           },
@@ -146,28 +148,28 @@ const Statistics = () => {
         />
       </Tabs>
       {value === 0 && (
-        <div className="mt-9 p-4 md:p-0">
+        <div className="mt-9 px-4 md:p-0">
           <OverviewTab />
         </div>
       )}
       {value === 1 && (
-        <div className="mt-9">
+        <div className="mt-9 px-4 md:p-0">
           <SystemTab />
         </div>
       )}
       {value === 2 && (
-        <div className="mt-9">
+        <div className="mt-9 px-4 md:p-0">
           <Accounts />
         </div>
       )}
       {value === 3 && (
-        <div className="mt-9">
+        <div className="mt-9 px-4 md:p-0">
           {" "}
           <Positions />{" "}
         </div>
       )}
       {value === 4 && (
-        <div className="mt-9">
+        <div className="mt-9 px-4 md:p-0">
           <Orders />
         </div>
       )}
