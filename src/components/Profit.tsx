@@ -48,7 +48,7 @@ const Profit = () => {
             key={item.id}
             className={`  ${
               theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
-            } bg-opacity-5 w-full md:w-[300px] p-2 md:p-4`}
+            } bg-opacity-5 w-full md:w-[300px] p-2 md:p-4 rounded-[10px]`}
           >
             <Typography
               sx={{
