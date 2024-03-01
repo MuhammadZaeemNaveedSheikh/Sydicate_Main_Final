@@ -27,6 +27,7 @@ const AffiliatePortal = () => {
         <Tabs
           value={value}
           onChange={handleChange}
+          variant="scrollable"
           aria-label="basic tabs example"
           sx={{
             fontFamily: "Montserrat",

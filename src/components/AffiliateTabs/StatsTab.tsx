@@ -124,7 +124,7 @@ const StatsTab = () => {
       </div>
 
       <Card
-        sx={{ p: { xs: 2, md: 4 }, width: { xs: "70%", md: "29%" }, mt: 6, borderRadius: "10px" }}
+        sx={{ p: { xs: 2, md: 4 }, width: { xs: "100%", sm: "50%", md:"29%" }, mt: 6, borderRadius: "10px" }}
       >
         <div className="flex justify-between gap-1">
           <img src="/Icons/dollarIcon.svg" width={40} height={40} />

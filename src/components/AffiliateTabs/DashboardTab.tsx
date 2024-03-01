@@ -114,7 +114,7 @@ const DashboardTab = () => {
       </div>
       <div className="flex flex-col md:flex-row mt-6 gap-6 lg:gap-8 lg:px-6">
         <div
-          className={`w-full lg:w-[25%] flex flex-col justify-between ${
+          className={`w-full lg:w-[28%] flex flex-col justify-between ${
             theme.palette.mode === "light" ? "bg-gray-500" : "bg-white"
           } bg-opacity-5 p-2 md:p-4 rounded-[10px]`}
         >
