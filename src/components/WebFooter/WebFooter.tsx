@@ -28,7 +28,7 @@ export default function WebFooter() {
         <div className="absolute bottom-0 left-0">
           <img src={FooterBottomEllipse} alt="Footer Ellipse" />
         </div>
-        <div className="px-5 md:px-14 xl:px-20 py-5 md:py-14 w-full flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start  text-white">
+        <div className="px-5 md:px-14 xl:px-20 py-5 md:py-14 w-full flex flex-col md:flex-row justify-center md:justify-between items-start gap-6 md:gap-0 md:items-start text-white">
           <FirstColumn />
           <SecondColumn />
           <ThirdColumn />

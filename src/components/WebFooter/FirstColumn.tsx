@@ -25,7 +25,7 @@ const FirstColumn = () => {
         <Typography sx={stylesMui.contactText}>
           Mon - Fri : 8am - 8 Pm (GST)
         </Typography>
-        <Typography sx={stylesMui.contactText}>
+        <Typography sx={stylesMui.contactText} className="lowercase">
           <a
             href="mailto:support@syndicatefunded.com"
             className="text-white no-underline"
@@ -33,8 +33,8 @@ const FirstColumn = () => {
             support@syndicatefunded.com
           </a>
         </Typography>
-        <Typography sx={stylesMui.contactText}>
-          10 Lower Themes Street, Billings-Gate, London, England, EC3R6AF
+        <Typography sx={stylesMui.contactText} className="max-w-[400px]">
+          The Meydan Hotel, Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E
         </Typography>
       </div>
     </div>
