@@ -48,7 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({ menuItem }) => {
           className={`font-[Montserrat] font-medium text-lg text-white flex items-center py-5 gap-5 pl-9 ${isNavLinkActive(item.path) ? "bg-[#9cacc5]":""}`}
         >
           {isNavLinkActive(item.path) && (
-            <div className="fixed left-0">
+            <div className="absolute left-0">
               <SelectedSidebar />
             </div>
           )}
