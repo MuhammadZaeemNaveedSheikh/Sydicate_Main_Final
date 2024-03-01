@@ -24,47 +24,43 @@ const Sidebar: React.FC<SidebarProps> = ({ menuItem }) => {
 
   return (
     <div className="hidden lg:flex flex-col 3xl:justify-between 3xl:h-[100vh]">
-      <NavLink to="/">
-        <div className="flex gap-4 justify-center items-center mt-12 px-8">
-          <img src="../../Icons/logo1.webp" alt="Syndicate Funded" width={64} height={64} />
-          <div
-            className={`font-[Montserrat] font-semibold text-[18px] -ml-2 text-${
-              theme.palette.mode === "light" ? "black" : "white"
-            }`}
-          >
-            SYNDICATE FUNDED
-          </div>
+      <NavLink
+        to="/"
+        className="flex gap-4 justify-center items-center mt-12 px-8"
+      >
+        <img
+          src="../../Icons/logo1.webp"
+          alt="Syndicate Funded"
+          width={64}
+          height={64}
+        />
+        <div
+          className={`font-[Montserrat] font-semibold text-[18px] -ml-2 text-${
+            theme.palette.mode === "light" ? "black" : "white"
+          }`}
+        >
+          SYNDICATE FUNDED
         </div>
       </NavLink>
       {menuItem?.map((item) => (
-        <div key={item?.id}>
-          <NavLink
-            to={item.path}
-            className={`font-[Montserrat] font-medium text-lg text-white ${
-              isNavLinkActive(item.path)
-                ? "flex items-center mt-8 bg-[#d6c3f8] bg-opacity-50 pb-8"
-                : ""
+        <NavLink
+          to={item.path}
+          className={`font-[Montserrat] font-medium text-lg text-white flex items-center py-5 gap-5 pl-9 ${isNavLinkActive(item.path) ? "bg-[#9cacc5]":""}`}
+        >
+          {isNavLinkActive(item.path) && (
+            <div className="fixed left-0">
+              <SelectedSidebar />
+            </div>
+          )}
+          <div>{item?.icon}</div>
+          <div
+            className={`link_text ${
+              theme.palette.mode === "light" ? "text-black" : "text-white"
             }`}
           >
-            {isNavLinkActive(item.path) && (
-              <div className="relative">
-                <div className="absolute -top-2">
-                  <SelectedSidebar />
-                </div>
-              </div>
-            )}
-            <div className="flex gap-7 items-center mt-8 pl-8">
-              <div>{item?.icon}</div>
-              <div
-                className={`link_text ${
-                  theme.palette.mode === "light" ? "text-black" : "text-white"
-                }`}
-              >
-                {item.name}
-              </div>
-            </div>
-          </NavLink>
-        </div>
+            {item.name}
+          </div>
+        </NavLink>
       ))}
     </div>
   );
