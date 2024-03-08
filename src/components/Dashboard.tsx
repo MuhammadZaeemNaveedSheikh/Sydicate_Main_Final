@@ -1,6 +1,11 @@
 import { Card, Typography, useTheme } from "@mui/material";
 import QuestionMarkIcon from "./QuestionMarkIcon";
 import DoneIcon from "@mui/icons-material/Done";
+import DiamondIcon from "../assets/images/diamond.png";
+import RubyIcon from "../assets/images/ruby.png";
+import SilverIcon from "../assets/images/silver.png";
+import EmeraldIcon from "../assets/images/emerald.png";
+import GoldIcon from "../assets/images/gold.png";
 
 import styles from "./styles.module.css";
 
@@ -51,9 +56,22 @@ const Objective: Objective[] = [
 const Dashboard = () => {
   const theme = useTheme();
 
+  function getIcon(index: number) {
+    switch(index){
+      case 0:
+        return SilverIcon
+      case 1:
+        return GoldIcon
+      case 2:
+        return EmeraldIcon
+      case 3:
+        return RubyIcon
+    }
+  }
+
   const data: BillingInfo[] = [
     {
-      title: "Challenge 10k",
+      title: "Silver Challenge",
       amount: "$107",
       targets: [
         "Profit target 12%",
@@ -62,7 +80,7 @@ const Dashboard = () => {
       ],
     },
     {
-      title: "Challenge 25k",
+      title: "Gold Challenge",
       amount: "$207",
       targets: [
         "Profit target 12%",
@@ -71,7 +89,7 @@ const Dashboard = () => {
       ],
     },
     {
-      title: "Challenge 50k",
+      title: "Emerald Challenge",
       amount: "$307",
       targets: [
         "Profit target 12%",
@@ -80,7 +98,7 @@ const Dashboard = () => {
       ],
     },
     {
-      title: "Challenge 100k",
+      title: "Ruby Challenge",
       amount: "$507",
       targets: [
         "Profit target 12%",
@@ -147,7 +165,8 @@ const Dashboard = () => {
 
       <div className="w-full md:w-[450px] rounded bg-white bg-opacity-5 mx-auto text-center mt-12">
         <div className={styles["gradient-border"]}>
-          <div className="bg-[#5B1CD4] h-10 lg:h-12 rounded-md">
+          <div className="bg-[#5B1CD4] h-10 lg:h-12 rounded-md flex justify-center items-center gap-2">
+            <img src={DiamondIcon} title="diamond" className="w-8 h-8" />
             <Typography
               sx={{
                 fontFamily: "Poppins",
@@ -155,7 +174,7 @@ const Dashboard = () => {
                 fontSize: { xs: 24, md: 30 },
               }}
             >
-              Challenge 200k
+              Diamond Challenge
             </Typography>
           </div>
           <div className="p-3 md:p-6">
@@ -221,19 +240,25 @@ const Dashboard = () => {
         {data.map((item, index) => (
           <div
             key={index}
-            className={`w-full md:w-[309px] rounded-[10px] ${
+            className={`w-full md:w-[339px] rounded-[10px] ${
               theme.palette.mode === "light" ? "bg-gray-700" : "bg-white"
             } bg-opacity-5 p-3 md:p-6 md:py-12 text-center`}
           >
-            <Typography
-              sx={{
-                fontFamily: "Poppins",
-                color: theme.palette.mode === "light" ? "#00000088" : "#D6C3F8",
-                fontSize: { xs: 24, md: 30 },
-              }}
-            >
-              {item.title}
-            </Typography>
+            <div className="flex justify-center items-center gap-2">
+              <img src={getIcon(index)} title={item.title} className="w-8 h-8"/>
+              <Typography
+                sx={{
+                  fontFamily: "Poppins",
+                  color:
+                    theme.palette.mode === "light" ? "#00000088" : "#D6C3F8",
+                  fontSize: { xs: 20, md: 26 },
+                  textAlign: "left"
+                }}
+                className="leading-[30px]"
+              >
+                {item.title}
+              </Typography>
+            </div>
             <Typography
               sx={{
                 color: theme.palette.mode === "light" ? "black" : "white",
@@ -260,7 +285,9 @@ const Dashboard = () => {
               </div>
             ))}
             <button
-              className={`${theme.palette.mode === "light" ? "bg-black":"bg-none"} text-white font-medium text-lg font-[Poppins] cursor-pointer w-full h-12 rounded-[6px] mt-8`}
+              className={`${
+                theme.palette.mode === "light" ? "bg-black" : "bg-none"
+              } text-white font-medium text-lg font-[Poppins] cursor-pointer w-full h-12 rounded-[6px] mt-8`}
               style={{ border: "1px solid white" }}
             >
               Get started
