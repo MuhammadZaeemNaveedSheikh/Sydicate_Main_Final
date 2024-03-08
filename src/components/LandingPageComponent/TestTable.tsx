@@ -20,7 +20,7 @@ const TestTable = () => {
   ];
 
   return (
-    <div className={`w-full md:w-11/12 border border-white border-opacity-10 ${
+    <div className={`w-full md:w-4/5 border border-white border-opacity-10 ${
       theme.palette.mode === "light" ? "bg-gray-700" : "bg-white"
     } bg-opacity-5 rounded-xl py-8 px-2 md:px-10 overflow-x-auto`}>
     <table
